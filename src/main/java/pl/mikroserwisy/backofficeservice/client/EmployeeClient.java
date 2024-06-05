@@ -9,7 +9,7 @@ import pl.mikroserwisy.backofficeservice.model.Employee;
 @HttpExchange
 public interface EmployeeClient {
 
-  @GetExchange("employee/backoffice/{id}")
+  @GetExchange("employee/backoffice/{backofficeId}")
   List<Employee> getEmployeesForBackoffice(@PathVariable Long backofficeId);
 
 
